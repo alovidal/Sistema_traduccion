@@ -6,9 +6,9 @@ Este proyecto permite traducir el contenido de un archivo PDF de un idioma a otr
 
 - Python 3.x
 - Librerías:
-  - `PyPDF2` para la extracción de texto de PDFs.
-  - `googletrans` para la traducción automática del texto.
-  - `fpdf` para generar archivos PDF.
+  - `PyMuPDF` para extraer el contenido del PDF.
+  - `deep_translator` para realizar la traducción.
+  - `reportlab` para generar archivos PDF.
 
 ## Intalacion
 ```bash
@@ -31,4 +31,5 @@ C:/ruta/archivo.pdf
 Ingresa el idioma de destino ('es' para español, 'en' para inglés):
 es
 ```
+
 

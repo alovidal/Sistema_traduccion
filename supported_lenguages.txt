@@ -1,0 +1,74 @@
+supported_languages = [
+    "af",  # Afrikáans
+    "sq",  # Albanés
+    "de",  # Alemán
+    "am",  # Amárico
+    "ar",  # Árabe
+    "hy",  # Armenio
+    "az",  # Azerbaiyano
+    "bn",  # Bengalí
+    "bg",  # Búlgaro
+    "ca",  # Catalán
+    "ceb", # Cebuano
+    "cs",  # Checo
+    "zh-CN", # Chino Simplificado
+    "zh-TW", # Chino Tradicional
+    "ht",  # Creol haitiano
+    "hr",  # Croata
+    "da",  # Danés
+    "nl",  # Neerlandés (holandés)
+    "en",  # Inglés
+    "et",  # Estonio
+    "tl",  # Filipínico (Tagalog)
+    "fi",  # Finés
+    "fr",  # Francés
+    "gl",  # Gallego
+    "ka",  # Georgiano
+    "de-CH", # Alemán (Suizo)
+    "el",  # Griego
+    "gu",  # Gujarati
+    "ht",  # Haitiano
+    "he",  # Hebreo
+    "hu",  # Húngaro
+    "id",  # Indonesio
+    "is",  # Islandés
+    "it",  # Italiano
+    "ja",  # Japonés
+    "jw",  # Javanés
+    "kn",  # Kannada
+    "kk",  # Kazajo
+    "km",  # Khmer
+    "ko",  # Koreano
+    "ku",  # Kurdos (Kurdo)
+    "lo",  # Laosiano
+    "lv",  # Letón
+    "lt",  # Lituano
+    "mk",  # Macedonio
+    "ms",  # Malayo
+    "ml",  # Malayalam
+    "mr",  # Marathi
+    "mn",  # Mongol
+    "ne",  # Nepali
+    "no",  # Noruego
+    "ps",  # Pashto
+    "fa",  # Persa (Farsi)
+    "pl",  # Polaco
+    "pt",  # Portugués
+    "ro",  # Rumano
+    "ru",  # Ruso
+    "sr",  # Serbio
+    "sd",  # Sindhi
+    "so",  # Somali
+    "sw",  # Suajili
+    "sv",  # Sueco
+    "ta",  # Tamil
+    "te",  # Telugú
+    "th",  # Tailandés
+    "tr",  # Turco
+    "uk",  # Ucraniano
+    "ur",  # Urdu
+    "vi",  # Vietnamita
+    "cy",  # Galés
+    "yi",  # Yiddish
+    "zu",  # Zulú
+]
