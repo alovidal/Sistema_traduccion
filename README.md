@@ -13,5 +13,6 @@ Este proyecto permite traducir el contenido de un archivo PDF de un idioma a otr
 Puedes instalar las dependencias usando `pip`:
 
 ```bash
-pip install PyPDF2 googletrans fpdf
+pip install -r requerimientos.txt
+
 
