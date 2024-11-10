@@ -1,3 +1,4 @@
 deep_translator==1.7.0
 reportlab==3.6.8
 PyMuPDF==1.19.6
+tqdm==4.64.1
