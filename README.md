@@ -10,6 +10,11 @@ Este proyecto permite traducir el contenido de un archivo PDF de un idioma a otr
   - `googletrans` para la traducción automática del texto.
   - `fpdf` para generar archivos PDF.
 
+##Intalacion
+```bash
+git clone https://github.com/alovidal/Sistema_traduccion.git
+```
+
 Puedes instalar las dependencias usando `pip`:
 
 ```bash
