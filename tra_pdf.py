@@ -24,7 +24,7 @@ def dividir_texto(texto, max_length=4000):
     return partes
 
 # Funciones para extraer y traducir texto
-def traducir_texto(texto, destino='es'): # destino puede ser 'es' o 'en' dependiendo del idioma del PDF
+def traducir_texto(texto, destino):
     traductor = GoogleTranslator(source='auto', target=destino)
     partes = dividir_texto(texto)
     texto_traducido = ""
@@ -52,7 +52,7 @@ def crear_pdf(texto, nombre_pdf='traduccion.pdf'):
 
 if __name__ == "__main__":
     ruta_pdf = input("Ingresa la ruta del PDF en inglés:\n")
-    idioma_destino = input("Ingresa el idioma de destino ('es' para español, 'en' para inglés):\n").lower()
+    destino = input("Ingresa el idioma de destino ('es' para español, 'en' para inglés):\n").lower()
 
     texto_extraido = extraer_texto_pdf(ruta_pdf)
     if not texto_extraido.strip():
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         print("\nTexto extraído del PDF:")
         print(texto_extraido[:500], "...")
 
-        texto_traducido = traducir_texto(texto_extraido, destino=idioma_destino)
+        texto_traducido = traducir_texto(texto_extraido, destino)
         if texto_traducido.strip():
             print("\nTexto traducido:")
             print(texto_traducido[:500], "...")
@@ -70,9 +70,9 @@ if __name__ == "__main__":
             nombre_base = os.path.splitext(os.path.basename(ruta_pdf))[0]
 
             # Generar el nuevo nombre del PDF basado en el idioma
-            if idioma_destino == 'es':
+            if destino == 'es':
                 nuevo_nombre_pdf = f"{nombre_base} - Español.pdf"
-            elif idioma_destino == 'en':
+            elif destino == 'en':
                 nuevo_nombre_pdf = f"{nombre_base} - Inglés.pdf"
             else:
                 nuevo_nombre_pdf = f"{nombre_base} - Traducción.pdf"
