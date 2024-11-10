@@ -51,7 +51,7 @@ def crear_pdf(texto, nombre_pdf='traduccion.pdf'):
 
 
 if __name__ == "__main__":
-    ruta_pdf = input("Ingresa la ruta del PDF en inglés:\n")
+    ruta_pdf = input("Ingresa la ruta del PDF:\n")
     destino = input("Ingresa el idioma de destino ('es' para español, 'en' para inglés):\n").lower()
 
     texto_extraido = extraer_texto_pdf(ruta_pdf)
