@@ -10,9 +10,24 @@ Este proyecto permite traducir el contenido de un archivo PDF de un idioma a otr
   - `googletrans` para la traducción automática del texto.
   - `fpdf` para generar archivos PDF.
 
-Puedes instalar las dependencias usando `pip`:
+## Intalacion
+```bash
+git clone https://github.com/alovidal/Sistema_traduccion.git
+```
+
+Puedes instalar las librerias usando `pip`:
 
 ```bash
 pip install -r requerimientos.txt
+```
+## Uso
 
-
+```bash
+python tra_pdf.py
+```
+```bash
+Ingresa la ruta del PDF en inglés:
+C:/Users/alons/Downloads/HTB-Fawn.pdf
+Ingresa el idioma de destino ('es' para español, 'en' para inglés):
+es
+```
