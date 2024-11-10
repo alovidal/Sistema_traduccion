@@ -26,8 +26,9 @@ pip install -r requerimientos.txt
 python tra_pdf.py
 ```
 ```bash
-Ingresa la ruta del PDF en inglés:
-C:/Users/alons/Downloads/HTB-Fawn.pdf
+Ingresa la ruta del PDF:
+C:/ruta/archivo.pdf
 Ingresa el idioma de destino ('es' para español, 'en' para inglés):
 es
 ```
+
