@@ -7,9 +7,8 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from tqdm import tqdm
 
+
 # Extraer texto y formato del PDF
-
-
 def extraer_texto_y_formato(ruta_pdf):
     documento = fitz.open(ruta_pdf)
     contenido = []
@@ -38,16 +37,15 @@ def extraer_texto_y_formato(ruta_pdf):
     documento.close()
     return contenido
 
-# Dividir texto en partes más seguras
 
-
-def dividir_texto_seguro(texto, max_length=3000):
+# Dividir texto
+def dividir_texto(texto, max_length=3000):
     texto = re.sub(r'\s+', ' ', texto).strip()
     partes = []
 
     while len(texto) > max_length:
         corte = texto[:max_length].rfind('.')
-        if corte == -1:  # Si no encuentra un punto, corta en el límite
+        if corte == -1:
             corte = max_length
         partes.append(texto[:corte + 1].strip())
         texto = texto[corte + 1:].strip()
@@ -57,9 +55,8 @@ def dividir_texto_seguro(texto, max_length=3000):
 
     return partes
 
-# Traducir el texto con manejo mejorado
 
-
+# Traducir el texto
 def traducir_contenido(contenido, destino):
     traductor = GoogleTranslator(source='auto', target=destino)
     contenido_traducido = []
@@ -67,22 +64,21 @@ def traducir_contenido(contenido, destino):
 
     # Usamos tqdm para mostrar la barra de progreso mientras traducimos
     for idx, (texto, estilo) in enumerate(tqdm(contenido, desc="Creando PDF", total=total_parrafos, unit="parrafo")):
-        partes = dividir_texto_seguro(texto)
+        partes = dividir_texto(texto)
         texto_traducido = ""
         for parte in partes:
             try:
                 texto_traducido += traductor.translate(parte) + "\n"
             except Exception as e:
                 print(f"Error al traducir una parte: {e}")
-                texto_traducido += parte  # Agregar el texto original en caso de error
+                texto_traducido += parte
 
         contenido_traducido.append((texto_traducido.strip(), estilo))
 
     return contenido_traducido
 
+
 # Crear PDF con formato
-
-
 def crear_pdf_con_formato(contenido, nombre_pdf):
     doc = SimpleDocTemplate(nombre_pdf, pagesize=A4, rightMargin=72,
                             leftMargin=72, topMargin=72, bottomMargin=18)
@@ -103,7 +99,7 @@ def crear_pdf_con_formato(contenido, nombre_pdf):
     doc.build(elementos)
     print(f"PDF traducido creado: {nombre_pdf}")
 
-
+# Ejecutar
 if __name__ == "__main__":
     ruta_pdf = input("Ingresa la ruta del PDF:\n")
     destino = input("Ingresa el idioma de destino:\n").lower()

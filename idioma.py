@@ -1,6 +1,6 @@
 from deep_translator import GoogleTranslator
 
-text = "Hola"
+text = input("Ingresa el texto a traducir en todos losde idiomas soportados:\n")
 
 # Obtener los idiomas soportados
 supported_languages = GoogleTranslator.get_supported_languages()

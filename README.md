@@ -53,11 +53,12 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más 
 
 ## Notas
 
-    Este proyecto utiliza la API de Google Translator a través de la biblioteca deep-translator, lo que significa que necesitarás una conexión a Internet para realizar la traducción.
-    La barra de progreso mostrada en la terminal indica el avance de la traducción y la creación del archivo PDF.
+Este proyecto utiliza la API de Google Translator a través de la biblioteca deep-translator, lo que significa que necesitarás una conexión a Internet para realizar la traducción.
+La barra de progreso mostrada en la terminal indica el avance de la traducción y la creación del archivo PDF.
 
 ### Instrucciones para usar el README:
 1. **Instalación de dependencias**: El archivo `README.md` explica cómo instalar las dependencias necesarias para ejecutar el script.
 2. **Ejecución**: Describe cómo ejecutar el script y qué entrada se espera del usuario.
 3. **Licencia y contribuciones**: Se menciona la licencia (MIT) y cómo contribuir al proyecto.
+
 
