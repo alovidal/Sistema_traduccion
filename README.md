@@ -61,4 +61,9 @@ La barra de progreso mostrada en la terminal indica el avance de la traducción 
 2. **Ejecución**: Describe cómo ejecutar el script y qué entrada se espera del usuario.
 3. **Licencia y contribuciones**: Se menciona la licencia (MIT) y cómo contribuir al proyecto.
 
+## Extras
+**Traducir texto a varios idiomas**
+``` bash
+python idioma.py
+```
 
