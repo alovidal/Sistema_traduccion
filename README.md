@@ -1,6 +1,6 @@
-# Sistema de Traducción de PDFs
+# Proyecto de Traducción de PDFs
 
-Este proyecto permite traducir el contenido de un archivo PDF de un idioma a otro, utilizando la API de Google Translate para realizar la traducción. Los archivos PDF se extraen, se traducen y luego se guardan como nuevos archivos PDF con el contenido traducido.
+Este proyecto permite extraer texto de un archivo PDF y traducirlo a un idioma diferente utilizando Google Translator, y luego crear un nuevo archivo PDF con el texto traducido. Además, incluye una barra de progreso para mostrar el estado de la creación del PDF.
 
 ## Requisitos
 
@@ -32,7 +32,7 @@ python tra_pdf.py
 Ingresa la ruta del PDF y el idioma al que se traducira. Espera a que el script complete el proceso: El script mostrará una barra de progreso durante la creación del nuevo PDF.
 Después de completar el proceso, se generará un nuevo archivo PDF con el contenido traducido. El archivo se guardará con el nombre nombre_original_del_pdf - idioma.pdf.
 
-## Ejemplo
+### Ejemplo
 
 ```bash
 python tra_pdf.py
