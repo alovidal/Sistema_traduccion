@@ -30,7 +30,7 @@ python tra_pdf.py
 ```
 
 Ingresa la ruta del PDF y el idioma al que se traducira. Espera a que el script complete el proceso: El script mostrará una barra de progreso durante la creación del nuevo PDF.
-Después de completar el proceso, se generará un nuevo archivo PDF con el contenido traducido. El archivo se guardará con el nombre nombre_original_del_pdf - idioma.pdf.
+Después de completar el proceso, se generará un nuevo archivo PDF con el contenido traducido. El archivo se guardará con el nombre `nombre_original_del_pdf - idioma.pdf`.
 
 ### Ejemplo
 
@@ -47,13 +47,9 @@ de-CH, el, gu, ht, he, hu, id, is, it, ja, jw, kn, kk, km, ko, ku, lo, lv, lt, m
 ps, fa, pl, pt, ro, ru, sr, sd, so, sw, sv, ta, te, th, tr, uk, ur, vi, cy, yi, zu
 ```
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
 ## Notas
 
-Este proyecto utiliza la API de Google Translator a través de la biblioteca deep-translator, lo que significa que necesitarás una conexión a Internet para realizar la traducción.
+Este proyecto utiliza la API de Google Translator a través de la biblioteca `deep-translator`, lo que significa que necesitarás una conexión a Internet para realizar la traducción.
 La barra de progreso mostrada en la terminal indica el avance de la traducción y la creación del archivo PDF.
 
 ### Instrucciones para usar el README:
