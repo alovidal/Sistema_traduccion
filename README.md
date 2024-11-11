@@ -29,8 +29,7 @@ Ejecuta el script en tu terminal con el siguiente comando:
 python tra_pdf.py
 ```
 
-Ingresa la ruta del PDF y el idioma de destino
-Espera a que el script complete el proceso: El script mostrará una barra de progreso durante la creación del nuevo PDF.
+Ingresa la ruta del PDF y el idioma al que se traducira. Espera a que el script complete el proceso: El script mostrará una barra de progreso durante la creación del nuevo PDF.
 Después de completar el proceso, se generará un nuevo archivo PDF con el contenido traducido. El archivo se guardará con el nombre nombre_original_del_pdf - idioma.pdf.
 
 ## Ejemplo
