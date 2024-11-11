@@ -13,7 +13,7 @@ Este proyecto permite extraer texto de un archivo PDF y traducirlo a un idioma d
 
 ## Intalacion
 ```bash
-git clone https://github.com/alovidal/Sistema_traduccion.git
+git clone https://github.com/alovidal/Traductor_de_PDF.git
 ```
 
 Puedes instalar las librerias usando `pip`:
